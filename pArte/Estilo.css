@@ -405,9 +405,10 @@ button {
   overflow: hidden;
 }
 .ah {
-  
+  display: block;
   position: relative;
- 
+  height: calc(18.39974021911621 * var(--rpx));
+  margin: calc(15 * var(--rpx)) 0 0 calc(8.4921875 * var(--rpx));
   color: transparent;
   font-family: Inter, var(--default-font-family);
   font-size: calc(18.682811737060547 * var(--rpx));
@@ -416,7 +417,7 @@ button {
   text-align: left;
   white-space: nowrap;
   background: linear-gradient(130.23deg, #8e09e0, #567bff);
-  z-index: 4;
+  z-index: 16;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: calc(0.007784504443407059 * var(--rpx)) #000000;
