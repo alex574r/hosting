@@ -10,14 +10,15 @@ html {
   scroll-behavior: smooth;
 }
   
-
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .main-container {
   overflow: hidden;
 }
 
-body{
-  margin: 0;
-}
 
 .main-container,
 .main-container * {
@@ -33,7 +34,6 @@ button {
 
 .main-container {
   position: relative;
- 
   height: calc(2745 * var(--rpx));
   margin: 0 auto;
   background: #0c0c0d;
