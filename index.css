@@ -10,14 +10,15 @@ html {
   scroll-behavior: smooth;
 }
   
-
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .main-container {
   overflow: hidden;
 }
 
-body{
-  margin: 0;
-}
 
 .main-container,
 .main-container * {
@@ -33,7 +34,6 @@ button {
 
 .main-container {
   position: relative;
- 
   height: calc(2745 * var(--rpx));
   margin: 0 auto;
   background: #0c0c0d;
@@ -1160,7 +1160,7 @@ button {
   height: 48.94%;
   top: 25.25%;
   left: 85.41%;
-  background: url(./assets/images/58f8d4c7-a28b-4593-9d35-f441661c765b.png)
+  background: url(./assets/images/18732573-38a6-42c6-9e16-96afd7353c2a.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 182;
