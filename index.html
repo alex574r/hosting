@@ -1,395 +1,384 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alejandro Hernández Maya</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="main-container">
-      <div class="rectangle"></div>
-      <div class="flex-row-c">
-        <div class="rectangle-1"></div>
-        <div class="rectangle-2"></div>
-        <div class="rectangle-3"></div>
-      </div>
-      <div class="experiencia" id="Experiencia">Experiencia </div>
-      <div class="flex-row-b">
-        <div class="rectangle-4">
-          <div class="rectangle-5"></div>
-          <span class="lorem">Microcontroladores</span
-          ><span class="lorem-ipsum-dolor"
-            >Mi experiencia personal en microcontroladores ha sido un viaje fascinante, 
-            desde la comprensión de su arquitectura hasta la implementación de proyectos 
-            que automatizan tareas cotidianas. He trabajado con plataformas como Arduino 
-            y PIC, programando en lenguajes como C y ensamblador para crear soluciones que 
-            integran sensores y actuadores.
-          </span>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#inicio" class="nav-logo">
+          <span class="logo-text">AH</span>
+          <div class="logo-dot"></div>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="#experiencia" class="nav-link">Experiencia</a>
+          <a href="#educacion" class="nav-link">Educación</a>
+          <a href="#proyectos" class="nav-link">Proyectos</a>
+          <a href="#contacto" class="nav-link">Contacto</a>
         </div>
-        <div class="rectangle-6">
-          <div class="rectangle-7"></div>
-          <span class="lorem-8">Redes</span
-          ><span class="lorem-ipsum-dolor-9"
-            >Mi experiencia personal en redes se ha centrado en la configuración y administración 
-            de infraestructuras de red, tanto a nivel local como en simulaciones usando herramientas 
-            como Packet Tracer. He trabajado con la configuración de routers, switches y servidores, 
-            implementando servicios como DHCP, DNS y servidores web.
-          </span>
+        <div class="nav-social">
+          <a href="https://github.com/alex574r" class="nav-social-link" aria-label="GitHub" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-4aa037230/" class="nav-social-link" aria-label="LinkedIn" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:alex574r@gmail.com" class="nav-social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
         </div>
-        <div class="rectangle-a">
-          <div class="rectangle-b"></div>
-          <span class="lorem-c">Proyectos Backend</span
-          ><span class="lorem-ipsum-dolor-d"
-            >En mi experiencia personal en proyectos backend, he trabajado en la creación de APIs y servicios 
-            para gestionar la lógica del servidor, la interacción con bases de datos y la seguridad de las aplicaciones.
-          </span>
-        </div>
-        <div class="rectangle-e">
-          <div class="rectangle-f"></div>
-          <span class="lorem-10">Diseño</span
-          ><span class="lorem-ipsum-dolor-11"
-            >En mi experiencia personal en diseño, he trabajado en la creación de interfaces y estructuras visuales tanto para aplicaciones 
-            web como para proyectos de software. Mi enfoque ha sido asegurar que la experiencia del usuario (UX) sea intuitiva y funcional, 
-            aplicando principios de diseño visual y usabilidad. He utilizado herramientas como Figma.
-          </span>
-        </div>
-        <div class="background"></div>
-        <div class="educacion-y-certificados" >Educación y Certificados</div>
-        <div class="rectangle-12">
-          <span class="lorem-ipsum-dolor-13"
-            >En 2022, obtuve  el Certificado de Bachillerato con titulación en Técnico 
-            en Programación, otorgado por Centro de Estudios Científicos y
-            Tecnológicos del Estado de México. 
-          </span>
-          <div class="rectangle-14"></div>
-          <span class="lorem-15">CECYTEM</span>
-        </div>
-        <div class="rectangle-16">
-          <span class="lorem-ipsum-dolor-17"
-            >En 2022, Obtuve la Certificación de competencia
-            Laboral en el Estándar de
-            Competencia en Desarrollo de
-            código de Software, otorgado por Centro de Estudios Científicos y
-            Tecnológico del Estado de México a su vez validado por el Consejo Nacional 
-            de Normalización Y Certificación de Competencias Laborales.
-          </span>
-          <div class="rectangle-18"></div>
-          <span class="lorem-19">CONOCER</span>
-        </div>
-        <div class="rectangle-1a">
-          <span class="lorem-ipsum-dolor-1b"
-            >En la Actualidad me encuentro estudiando el 5° Semestre de la carrera Ingeniería 
-            en Software en la Unidad Académica Profesional Tianguistenco de la Universidad Autónoma 
-            del Estado de México.
-          </span>
-          <div class="rectangle-1c"></div>
-          <span class="lorem-1d">UAPT</span>
-        </div>
-      </div>
-      <div class="proyectos" id="Educacion">Proyectos</div>
-      <div class="flex-row-a">
-        <button class="rectangle-1e" onclick="location.href='pSoftware/Software.html'">
-          <div class="image"></div>  
-          <div class="flex-column-f">
-            <span class="software">Software</span
-            ><span class="proyectos-1f">Proyectos</span>
-          </div>
-        </button>
-        <button class="rectangle-20" onclick="location.href='pArte/Arte.html'">
-          <div class="image-21"></div>
-          <span class="arte">Arte</span><span class="intentos">Intentos</span>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
         </button>
       </div>
-      <span class="contacto">Contacto</span>
-      <div class="flex-row">
-        <div class="email-form">
-          <div class="frame-22">
-            <div class="frame-23">
-              <div class="frame-24">
-                <div class="component">
-                  <div class="frame-25">
-                    <span class="primer-nombre">Primer nombre *</span>
-                  </div>
-                  <div class="rectangle-26"></div>
-                  <input class="component-input" />
-                </div>
-                <div class="group">
-                  <span class="apellido">Apellido *</span>
-                  <div class="rectangle-27"></div>
-                  <input class="group-input" />
-                </div>
-              </div>
-              <div class="component-28">
-                <span class="correo-electronico">Correo Electrónico*</span>
-                <div class="rectangle-29"></div>
-                <input class="component-input-2a" />
-              </div>
-              <div class="group-2b">
-                <span class="compania-opcional">Compañía (Opcional )</span>
-                <div class="rectangle-2c"></div>
-                <input class="group-input-2d" />
-              </div>
-              <div class="component-2e">
-                <span class="mensaje">Mensaje...</span>
-                <div class="rectangle-2f"></div>
-                <input class="component-input-30" />
-                <div class="line"></div>
-                <div class="line-31"></div>
-              </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+      <div class="hero-glow"></div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <span class="hero-greeting animate-in">Hola, me llamo</span>
+            <h1 class="hero-name animate-in delay-1">Alejandro<br/><span class="hero-name-accent">Hernández</span></h1>
+            <p class="hero-desc animate-in delay-2">
+              Soy un estudiante de Ingeniería en Software con un enfoque en el
+              desarrollo de soluciones eficientes y prácticas para optimizar el
+              rendimiento y la funcionalidad de sistemas digitales. En este sitio,
+              encontrarás proyectos, investigaciones y recursos relacionados con el
+              desarrollo de software, gestión de bases de datos y herramientas
+              tecnológicas.
+            </p>
+            <div class="hero-actions animate-in delay-3">
+              <a href="./archivos/CV.pdf" target="_blank" class="btn btn-primary">Descargar CV</a>
+              <a href="#experiencia" class="btn btn-outline">Ver Experiencia</a>
             </div>
           </div>
-          <button class="group-32">
-            <span class="enviar">Enviar</span>
-            <div class="rectangle-33"></div>
+          <div class="hero-photo-wrap animate-in delay-2">
+            <div class="hero-photo"></div>
+            <div class="hero-photo-ring"></div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="skills-section animate-in delay-4">
+          <p class="skills-label">Con experiencia en</p>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">HTML</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">CSS</span>
+                <span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-w="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Java</span>
+                <span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-w="60"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-pct">56%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-w="56"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Python</span>
+                <span class="skill-pct">30%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-w="30"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">C++</span>
+                <span class="skill-pct">29%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-w="29"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Git</span>
+                <span class="skill-pct">29%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-w="29"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">VSCode</span>
+                <span class="skill-pct">38%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-w="38"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCIA ===== -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <h2 class="section-title reveal">Experiencia</h2>
+        <div class="exp-grid">
+          <div class="exp-card reveal">
+            <div class="exp-icon">
+              <img src="./assets/images/microcontroladorIcon.png" alt="Microcontroladores" />
+            </div>
+            <h3>Microcontroladores</h3>
+            <p>Mi experiencia personal en microcontroladores ha sido un viaje fascinante,
+              desde la comprensión de su arquitectura hasta la implementación de proyectos
+              que automatizan tareas cotidianas. He trabajado con plataformas como Arduino
+              y PIC, programando en C y ensamblador para crear soluciones que integran
+              sensores y actuadores.</p>
+          </div>
+          <div class="exp-card reveal">
+            <div class="exp-icon">
+              <img src="./assets/images/RedIcon.png" alt="Redes" />
+            </div>
+            <h3>Redes</h3>
+            <p>Mi experiencia en redes se ha centrado en la configuración y administración
+              de infraestructuras de red, tanto a nivel local como en simulaciones usando
+              herramientas como Packet Tracer. He trabajado con la configuración de routers,
+              switches y servidores, implementando servicios como DHCP, DNS y servidores web.</p>
+          </div>
+          <div class="exp-card reveal">
+            <div class="exp-icon">
+              <img src="./assets/images/BackendIcon.png" alt="Backend" />
+            </div>
+            <h3>Proyectos Backend</h3>
+            <p>En proyectos backend he trabajado en la creación de APIs y servicios para
+              gestionar la lógica del servidor, la interacción con bases de datos y la
+              seguridad de las aplicaciones.</p>
+          </div>
+          <div class="exp-card reveal">
+            <div class="exp-icon">
+              <img src="./assets/images/ArteIcon.png" alt="Diseño" />
+            </div>
+            <h3>Diseño</h3>
+            <p>En diseño he trabajado en la creación de interfaces y estructuras visuales
+              para aplicaciones web y proyectos de software. Mi enfoque ha sido asegurar
+              que la experiencia del usuario (UX) sea intuitiva y funcional. He utilizado
+              herramientas como Figma.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCACION ===== -->
+    <section class="section section-alt" id="educacion">
+      <div class="container">
+        <h2 class="section-title reveal">Educación y Certificados</h2>
+        <div class="edu-list">
+          <div class="edu-card reveal">
+            <div class="edu-icon">
+              <img src="./assets/images/CECYTEMIcon.png" alt="CECYTEM" />
+            </div>
+            <div class="edu-body">
+              <h3>CECYTEM</h3>
+              <span class="edu-year">2022</span>
+              <p>Certificado de Bachillerato con titulación en Técnico en Programación,
+                otorgado por Centro de Estudios Científicos y Tecnológicos del Estado
+                de México.</p>
+            </div>
+          </div>
+          <div class="edu-card reveal">
+            <div class="edu-icon">
+              <img src="./assets/images/ConocerIcon.png" alt="CONOCER" />
+            </div>
+            <div class="edu-body">
+              <h3>CONOCER</h3>
+              <span class="edu-year">2022</span>
+              <p>Certificación de competencia Laboral en el Estándar de Competencia en
+                Desarrollo de código de Software, validado por el Consejo Nacional de
+                Normalización y Certificación de Competencias Laborales.</p>
+            </div>
+          </div>
+          <div class="edu-card reveal">
+            <div class="edu-icon">
+              <img src="./assets/images/UAEMIncon.png" alt="UAPT" />
+            </div>
+            <div class="edu-body">
+              <h3>UAPT — UAEM</h3>
+              <span class="edu-year">En curso</span>
+              <p>5° Semestre de la carrera Ingeniería en Software en la Unidad Académica
+                Profesional Tianguistenco de la Universidad Autónoma del Estado de México.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <h2 class="section-title reveal">Proyectos</h2>
+        <div class="projects-grid">
+          <button class="project-card reveal" onclick="location.href='pSoftware/Software.html'">
+            <div class="project-img project-img-software"></div>
+            <div class="project-overlay">
+              <div class="project-info">
+                <h3>Software</h3>
+                <span>Proyectos →</span>
+              </div>
+            </div>
+          </button>
+          <button class="project-card reveal" onclick="location.href='pArte/Arte.html'">
+            <div class="project-img project-img-arte"></div>
+            <div class="project-overlay">
+              <div class="project-info">
+                <h3>Arte</h3>
+                <span>Intentos →</span>
+              </div>
+            </div>
           </button>
         </div>
-        <div class="background-34"></div>
-        <span class="lorem-ipsum"
-          >Si tiene alguna oportunidad, no dude en comunicarse. 
-          Me encantaría conversar. Puede comunicarse a través de cualquier 
-          correo electrónico personal o complete el formulario a continuación.</span
-        >
       </div>
-      <div class="rectangle-35">
-        <a href="https://github.com/alex574r" class="icon"></a>
-        <a href="https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-4aa037230/"  class="vector"></a>
-        <a href="mailto:alex574r@gmail.com?subject=Asunto%20del%20correo&body=Hola%2C%20este%20es%20el%20contenido%20del%20correo." class="emoji"></a>
-        <span class="copyright">
-          © Copyright 2024 Alejandro Hernández Maya Inc.</span
-        ><span class="copyright-notice">
-          © Copyright 2024 Alejandro Hernández Maya Inc.</span
-        >
-      </div>
-      <div class="background-36"></div>
-      <div class="flex-row-eebb">
-        <div class="background-37"></div>
-        <div class="rectangle-38">
-          <div class="flex-row-39">
-            <div class="regroup">
-              <a href="https://github.com/alex574r" class="icon-3a"></a>
-              <a href="https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-4aa037230/" class="vector-3b"></a>
-              <a href="mailto:alex574r@gmail.com?subject=Asunto%20del%20correo&body=Hola%2C%20este%20es%20el%20contenido%20del%20correo." class="emoji-3c"></a>
-            </div>
-            <a href="" class="alejandro-hernandez">Alejandro Hernández</a
-            ><a href="#Experiencia" onclick="recargarYIrASeccion(event, '#Experiencia')" class="experiencia-3d">Experiencia </a
-            ><a href="#Educacion" onclick="recargarYIrASeccion(event, '#Educacion')" class="educacion">Educación </a>
-          </div>
-          
-        </div>
-        <div class="frame-3f">
-          <span class="ah">AH</span>
-          <div class="rectangle-40"></div>
-        </div>
-      </div>
-      <div class="flex-row-de">
-        <div class="image-41"></div>
-        <div class="hola-alejandro">
-          <span class="hola-alejandro-42">Hola, me llamo<br /></span
-          ><span class="alejandro">Alejandro</span>
-            
-        </div>
-        <div class="background-44"></div>
-        <div class="background-44"></div>
-        <span class="student-info"
-          >Soy un estudiante de Ingeniería en Software con un enfoque en el
-          desarrollo de soluciones eficientes y prácticas para optimizar el
-          rendimiento y la funcionalidad de sistemas digitales. En este sitio,
-          encontrarás proyectos, investigaciones y recursos relacionados con el
-          desarrollo de software, gestión de bases de datos y herramientas
-          tecnológicas para la resolución de problemas actuales.</span
-        >
-        <div class="rectangle-45">
-          <span class="descargar-cv"><a href="./archivos/CV.pdf" target="_blank" class="d-CV">Descargar CV</a></span>
-        </div>
-        <a  href="#Experiencia" onclick="recargarYIrASeccion(event, '#Experiencia')" class="ver-experiencia">Ver Experiencia </a>
-        <div class="rectangle-46">
-          <div class="flex-column-b">
-            <span class="percentage-80">80%</span>
-            <div class="rectangle-47">
-              <div class="light">
-                <div class="rectangle-48">
-                  <div class="light-49">
-                    <div class="rectangle-4a">
-                      <div class="rectangle-4b"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex-column-dc">
-            <div class="html"></div>
-            <span class="html-4c">HTML</span>
-          </div>
-        </div>
-        <div class="rectangle-4d">
-          <div class="flex-column-c">
-            <span class="percentage-38">38%</span>
-            <div class="rectangle-4e">
-              <div class="light-4f">
-                <div class="rectangle-50">
-                  <div class="light-51">
-                    <div class="rectangle-52">
-                      <div class="rectangle-53"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex-column-ada">
-            <div class="vs-code"><div class="vs-code-54"></div></div>
-            <span class="vsc">VSC</span>
-          </div>
-        </div>
-        <span class="ano">1 año</span>
-        <div class="rectangle-55">
-          <div class="flex-row-af">
-            <div class="java"><div class="java-56"></div></div>
-            <span class="percentage">60%</span>
-          </div>
-          <div class="rectangle-57">
-            <div class="light-58">
-              <div class="rectangle-59">
-                <div class="light-5a">
-                  <div class="rectangle-5b">
-                    <div class="rectangle-5c"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="rectangle-5d">
-          <div class="flex-row-fc">
-            <div class="git"></div>
-            <span class="percentage-5e">29%</span>
-          </div>
-          <div class="flex-row-aeb">
-            <span class="git-5f">Git</span>
-            <div class="rectangle-60">
-              <div class="light-61">
-                <div class="rectangle-62">
-                  <div class="light-63">
-                    <div class="rectangle-64">
-                      <div class="rectangle-65"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <span class="xp">XP</span><span class="java-66">Java</span>
-        <div class="rectangle-67">
-          <div class="flex-row-f">
-            <div class="python"><div class="python-68"></div></div>
-            <span class="percentage-69">30%</span>
-          </div>
-          <div class="flex-row-eccb">
-            <span class="python-6a">Python</span>
-            <div class="rectangle-6b">
-              <div class="light-6c">
-                <div class="rectangle-6d">
-                  <div class="light-6e">
-                    <div class="rectangle-6f">
-                      <div class="rectangle-70"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="rectangle-71">
-          <div class="flex-column-cf">
-            <span class="percentage-72">72%</span>
-            <div class="rectangle-73">
-              <div class="light-74">
-                <div class="rectangle-75">
-                  <div class="light-76">
-                    <div class="rectangle-77">
-                      <div class="rectangle-78"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex-column-c-79">
-            <div class="css"></div>
-            <span class="css-7a">CSS</span>
-          </div>
-        </div>
-        <div class="rectangle-7b">
-          <div class="flex-row-a-7c">
-            <div class="image-7d"></div>
-            <span class="percentage-7e">56%</span>
-          </div>
-          <div class="rectangle-7f">
-            <div class="light-80">
-              <div class="rectangle-81">
-                <div class="light-82">
-                  <div class="rectangle-83">
-                    <div class="rectangle-84"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="rectangle-85">
-          <div class="flex-row-da">
-            <div class="c-plus-plus"><div class="c-plus-plus-86"></div></div>
-            <span class="percentage-87">29%</span>
-          </div>
-          <div class="flex-row-c-88">
-            <span class="c-plus-plus-89">C++</span>
-            <div class="rectangle-8a">
-              <div class="light-8b">
-                <div class="rectangle-8c">
-                  <div class="light-8d">
-                    <div class="rectangle-8e">
-                      <div class="rectangle-8f"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <span class="nb">NB</span>
-      </div>
-      <span class="backend-ecosystem"
-        >Con el mas ecosistema<br />de backend
-      </span>
-    </div>
-    <!-- Generated by Codia AI - https://codia.ai/ -->
-  </body>
+    </section>
 
-  <script>
-    function recargarYIrASeccion(seccionId) {
-        // Guardar el id de la sección en el hash de la URL
-        location.hash = seccionId;
+    <!-- ===== CONTACTO ===== -->
+    <section class="section section-alt" id="contacto">
+      <div class="container">
+        <h2 class="section-title reveal">Contacto</h2>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p>Si tiene alguna oportunidad, no dude en comunicarse. Me encantaría
+              conversar. Puede comunicarse a través de correo electrónico personal
+              o completar el formulario.</p>
+            <div class="contact-links">
+              <a href="https://github.com/alex574r" class="contact-pill" target="_blank">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-4aa037230/" class="contact-pill" target="_blank">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+              <a href="mailto:alex574r@gmail.com" class="contact-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                alex574r@gmail.com
+              </a>
+            </div>
+          </div>
+          <form class="contact-form reveal" onsubmit="return false;">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Primer nombre *</label>
+                <input id="nombre" type="text" placeholder="Nombre" />
+              </div>
+              <div class="form-group">
+                <label for="apellido">Apellido *</label>
+                <input id="apellido" type="text" placeholder="Apellido" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo Electrónico *</label>
+              <input id="email" type="email" placeholder="correo@ejemplo.com" />
+            </div>
+            <div class="form-group">
+              <label for="company">Compañía (Opcional)</label>
+              <input id="company" type="text" placeholder="Tu empresa" />
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
-        // Recargar la página
-        location.reload();
-    }
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <a href="#inicio" class="nav-logo footer-logo">
+            <span class="logo-text">AH</span>
+            <div class="logo-dot"></div>
+          </a>
+          <nav class="footer-nav">
+            <a href="#experiencia">Experiencia</a>
+            <a href="#educacion">Educación</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+          <div class="footer-social">
+            <a href="https://github.com/alex574r" aria-label="GitHub" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-4aa037230/" aria-label="LinkedIn" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="mailto:alex574r@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+        <p class="footer-copy">© Copyright 2024 Alejandro Hernández Maya Inc.</p>
+      </div>
+    </footer>
 
-    // Verificar si hay un hash en la URL al cargar la página
-    window.onload = function() {
-        if (location.hash) {
-            // Desplazar a la sección si hay un hash
-            const seccion = document.querySelector(location.hash);
-            if (seccion) {
-                seccion.scrollIntoView();
-            }
+    <script>
+      // ── Navbar scroll style ──
+      const navbar = document.querySelector('.navbar');
+      window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 40);
+      });
+
+      // ── Mobile menu toggle ──
+      const toggle = document.getElementById('navToggle');
+      const navLinks = document.getElementById('navLinks');
+      toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        toggle.classList.toggle('active');
+      });
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('open');
+          toggle.classList.remove('active');
+        });
+      });
+
+      // ── Scroll-reveal for .reveal elements ──
+      const revealObs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            revealObs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+      // ── Skill bar animation ──
+      const skillsSection = document.querySelector('.skills-section');
+      let skillsAnimated = false;
+      const skillsObs = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && !skillsAnimated) {
+          skillsAnimated = true;
+          document.querySelectorAll('.skill-fill').forEach(bar => {
+            const w = bar.dataset.w;
+            bar.style.width = w + '%';
+          });
         }
-    }
-</script>
-
-
+      }, { threshold: 0.3 });
+      if (skillsSection) skillsObs.observe(skillsSection);
+    </script>
+  </body>
 </html>
